@@ -1,8 +1,7 @@
-<<<<<<< HEAD
+
 const todoList= ['make dinner','wash dishes'];
-=======
-const todoList= ['wash dishes','wash clothes'];
->>>>>>> fe56b21371d2dd3de4dbeada8116879f8d85f330
+
+
 
 renderTodolist();
 
@@ -21,7 +20,7 @@ function renderTodolist(){
                         
                     </p>
                 `;
-=======
+
         const html = `<p>
         ${todo}
         <button onclicl="
