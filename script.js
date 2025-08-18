@@ -1,4 +1,4 @@
-const todoList= [];
+const todoList= ['wash dishes','wash clothes'];
 
 renderTodolist();
 
