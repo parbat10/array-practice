@@ -10,7 +10,6 @@ function renderTodolist(){
 
     for(let i=0; i< todoList.length; i++){
         const todo = todoList[i];
-<<<<<<< HEAD
         const html = `
                 <p>
                         ${todo}
@@ -28,7 +27,6 @@ function renderTodolist(){
         renderTodolist();
         ">delete</button>
         </p>`;
->>>>>>> fe56b21371d2dd3de4dbeada8116879f8d85f330
         todoListHTML += html;
     }
     console.log(todoListHTML);
