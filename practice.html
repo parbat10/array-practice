@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="./index.html"><button>home</button></a>
+    <input type="text" class="js-input">
+    <button onclick="addFunction()">add</button>
+    <button onclick="doSum()">sum</button>
+    
+    <script>
+       /* let box=['car','bike','gun'];
+
+        for(let i=0; i<box.length; i++){
+        let answer=box[i];
+        console.log(answer);
+    }*/
+
+    const numbers=[];
+    
+    let total=0;
+
+    
+
+    function addFunction(){
+        let inputElement= document.querySelector('.js-input');
+        let inputNum = inputElement.value;
+        inputNum = parseInt(inputNum);
+
+        numbers.push(inputNum);
+        console.log(numbers);
+        inputElement.value='';
+    }
+    
+    function doSum(){for(let i=0; i<numbers.length; i++){
+        let value= numbers[i];
+        total += value;
+        total = parseInt(total);
+        
+    }
+    console.log(total);}
+
+    </script>
+</body>
+</html>
