@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-
-const todoList= [];
-
-
-=======
 const todoList= [{
         name:'eat',
         dueDate:'2022-12-22'
@@ -11,7 +5,7 @@ const todoList= [{
         name:'brush',
         dueDate:'2022-12-22'
 }];
->>>>>>> a8557b7 (almost completed)
+
 
 renderTodolist();
 
@@ -19,18 +13,6 @@ function renderTodolist(){
     let todoListHTML = '';
 
     for(let i=0; i< todoList.length; i++){
-<<<<<<< HEAD
-        const todo = todoList[i];
-        const html = `
-        <p>
-                        ${todo}
-                        <button onclick="todoList.splice(${i},1);
-                        renderTodolist();
-                        ">delete</button>
-                        
-                    </p>
-                `;
-=======
         const todoObject = todoList[i];
         const name = todoObject.name;
         const dueDate = todoObject.dueDate;
@@ -44,7 +26,7 @@ function renderTodolist(){
             </button>
         </p>
         `;
->>>>>>> a8557b7 (almost completed)
+
         todoListHTML += html;
         
     }
