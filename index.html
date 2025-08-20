@@ -9,11 +9,13 @@
 <body>
     <a href="./practice.html"><button>practice</button></a>
     <p>Todo list</p>
-    <input type="text" placeholder="TODO LIST" class="js-todo-input">
-    <input type="date" class="js-date-input">
-    <button onclick="
+    <div class="todo-input-grid">
+    <input type="text" placeholder="TODO LIST" class="js-todo-input name-input">
+    <input type="date" class="js-date-input deu-date-input">
+    <button class="add-todo-button" onclick="
     addTodo()">Add</button>
-    <div class="js-todo-list"></div>
+    </div>
+    <div class="js-todo-list todo-grid"></div>
 
     
     
